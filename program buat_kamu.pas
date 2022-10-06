@@ -1,6 +1,6 @@
 //FINAL
 
-program cinta;
+program buat_kamu;
 uses crt;
 var
 nama, p1, tanggal, cantik: string;
