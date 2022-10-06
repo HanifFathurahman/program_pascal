@@ -8,55 +8,55 @@ hasil3:real;
 
 begin
 clrscr;
-	writeln('|----------------------|');
-	writeln('|   1. Volume Balok    |');
-	writeln('|   2. Volume Kubus    |');
-	writeln('|   3. Luas Segitiga   |');
-	writeln('|----------------------|');
-	write('Silahkan di pilih :       ');
-	readln(pilih);
+	delay(100); writeln('|----------------------|');
+	delay(100); writeln('|   1. Volume Balok    |');
+	delay(100); writeln('|   2. Volume Kubus    |');
+	delay(100); writeln('|   3. Luas Segitiga   |');
+	delay(100); writeln('|----------------------|');
+	delay(100); write('Silahkan di pilih : ');
+	delay(100); readln(pilih);
 	writeln;
 
 //HITUNG VOLUME BALOK
 if (pilih=1) then
 	begin	
-	writeln('----- Volume Balok ----');
-	write('Masukkan Panjang Balok : ');
-	readln(p);
-	write('Masukkan Lebar Balok   : ');
-	readln(l);
-	write('Masukkan Tinggi Balok  : ');
-	readln(t);
-	hasil:=p*l*t;
-	writeln('Hasilnya adalah : ',hasil);
-	readln;
+	delay(100);writeln('----- Volume Balok ----');
+	delay(100);write('Masukkan Panjang Balok : ');
+	delay(100);readln(p);
+	delay(100);write('Masukkan Lebar Balok   : ');
+	delay(100);readln(l);
+	delay(100);write('Masukkan Tinggi Balok  : ');
+	delay(100);readln(t);
+	delay(100);hasil:=p*l*t;
+	delay(100);writeln('Hasilnya adalah : ',hasil);
+	delay(100);readln;
 	end
 
 //HITUNG VOLUME KUBUS
 else
 if (pilih=2) then
 	begin
-	writeln('---- Volume Kubus ----');
-	write('Masukkan Panjang Kubus : ');
-	readln(p2);
-	write('Masukkan Lebar Kubus   : ');
-	readln(l2);
-	hasil2:=p2*l2;
-	writeln('Hasilnya adalah : ',hasil2);
-	readln;
+	delay(100);writeln('---- Volume Kubus ----');
+	delay(100);write('Masukkan Panjang Kubus : ');
+	delay(100);readln(p2);
+	delay(100);write('Masukkan Lebar Kubus   : ');
+	delay(100);readln(l2);
+	delay(100);hasil2:=p2*l2;
+	delay(100);writeln('Hasilnya adalah : ',hasil2);
+	delay(100);readln;
 	end
 
 //HITUNG LUAS SEGITIGA
 else 
 if (pilih=3) then
 	begin
-	writeln('------ Luas Segitiga ------');
-	write('Masukkan Alas Segitiga     : ');
-	readln(a);
-	write('Masukkan Tinggi Segitiga   : ');
-	readln(t2);
-	hasil3:=(a*t2) / 2;
-	writeln('Hasilnya adalah :',hasil3:1:1);
-	readln;
+	delay(100);writeln('------ Luas Segitiga ------');
+	delay(100);write('Masukkan Alas Segitiga     : ');
+	delay(100);readln(a);
+	delay(100);write('Masukkan Tinggi Segitiga   : ');
+	delay(100);readln(t2);
+	delay(100);hasil3:=(a*t2) / 2;
+	delay(100);writeln('Hasilnya adalah :',hasil3:1:1);
+	delay(100);readln;
 	end;
 end.
