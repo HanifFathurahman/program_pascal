@@ -1,0 +1,62 @@
+program hitung_bangun_datar;
+uses crt;
+var
+pilih,l,p,t,hasil:integer;
+p2,l2,hasil2:integer;
+a,t2:integer;
+hasil3:real;
+
+begin
+clrscr;
+	writeln('|----------------------|');
+	writeln('|   1. Volume Balok    |');
+	writeln('|   2. Volume Kubus    |');
+	writeln('|   3. Luas Segitiga   |');
+	writeln('|----------------------|');
+	write('Silahkan di pilih :       ');
+	readln(pilih);
+	writeln;
+
+//HITUNG VOLUME BALOK
+if (pilih=1) then
+	begin	
+	writeln('----- Volume Balok ----');
+	write('Masukkan Panjang Balok : ');
+	readln(p);
+	write('Masukkan Lebar Balok   : ');
+	readln(l);
+	write('Masukkan Tinggi Balok  : ');
+	readln(t);
+	hasil:=p*l*t;
+	writeln('Hasilnya adalah : ',hasil);
+	readln;
+	end
+
+//HITUNG VOLUME KUBUS
+else
+if (pilih=2) then
+	begin
+	writeln('---- Volume Kubus ----');
+	write('Masukkan Panjang Kubus : ');
+	readln(p2);
+	write('Masukkan Lebar Kubus   : ');
+	readln(l2);
+	hasil2:=p2*l2;
+	writeln('Hasilnya adalah : ',hasil2);
+	readln;
+	end
+
+//HITUNG LUAS SEGITIGA
+else 
+if (pilih=3) then
+	begin
+	writeln('------ Luas Segitiga ------');
+	write('Masukkan Alas Segitiga     : ');
+	readln(a);
+	write('Masukkan Tinggi Segitiga   : ');
+	readln(t2);
+	hasil3:=(a*t2) / 2;
+	writeln('Hasilnya adalah :',hasil3:1:1);
+	readln;
+	end;
+end.
