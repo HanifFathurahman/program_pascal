@@ -93,8 +93,7 @@ begin
 	writeln('Okee lanjut langsung ajaa deh');
 	writeln('"enter"');
 	readln;
-	writeln;
-
+	
 	delay(1000);
 	writeln('--------------------------------------------------------------------------------------------------------------------');
 	
@@ -107,10 +106,10 @@ begin
 	write('Jawab : ');
 	readln;
 	delay(1000);
-	write('Terimakasih :)');
-	writeln;
-	writeln;
-	
+	writeln('Terimakasih :)');
+	writeln('"enter"');
+	readln;
+		
 	//cara menjawab
 	delay(1500);
 	writeln('Di program ini aku punya beberapa pertanyaan byy, jadi tolong di jawab sama kamu yaa :) ');
@@ -118,17 +117,15 @@ begin
 	writeln('"enter"');
 	readln;
 
-	writeln;
-
 	delay(1500);
 	writeln('Jawaban nya cuma ada  "A sama B" doang kok, jadi kamu tinggal ketik salah satu ajaa okee dengan menjawab "A" atau "B" :) ');
 	delay(1000);
 	writeln('"enter"');
 	readln;
-	writeln;
+	
+	writeln('--------------------------------------------------------------------------------------------------------------------');
 
-	//mulai pertanyaan
-	//1
+	//p1
 	delay(1500);
 	writeln('Kamu sayang ga si byy sama akuu?');
 	writeln('A. Sayang');
@@ -138,7 +135,7 @@ begin
 	readln(p1);
 
 	//pil1
-	if (p1='a') or (p1='A') and (p1='B') or (p1='b') then
+if (p1='a') or (p1='A') and (p1='B') or (p1='b') then
 	begin
 	delay(1000);
 	writeln('Yeayy.. aku juga sayang banget sama kamu byy :) ');
@@ -147,16 +144,17 @@ begin
 	end
 
 	//pil2
-	else
-	if (p1='c') or (p1='C') then
+else
+if (p1='c') or (p1='C') then
 	begin
 	delay(1000);
 	writeln('Ihh pokonya harus sayang sama akuu, ulang yaa haha');
 	writeln('"enter"');
 	readln;
 
+	writeln;
+
 	//ulang p1
-	begin
 	delay(1000);
 	writeln('Kamu sayang kan byy sama akuu?');
 	writeln('A. Sayang');
@@ -165,14 +163,23 @@ begin
 	readln(p1);
 
 	//p1
+if (p1='A') or (p1='a') and (p1='B') or(p1='b') then
 	delay(1000);
 	writeln('Yeayy... aku juga sayang banget sama kamu byy :)');
 	writeln('"enter"');
 	readln;
-	end;
+	end
+
+else
+	begin
+	delay(1000);
+	writeln('"Input Salah"');
+	delay(1000);
+	writeln('"enter"');
+	readln;
 	end;
 
-	writeln;
+	writeln('--------------------------------------------------------------------------------------------------------------------');
 
 	delay(1000);
 	writeln('20 Juli 2022, kamu inget ga byy ada apa di tanggal itu?');
@@ -181,7 +188,7 @@ begin
 	write(' Jawab : ');
 	readln(tanggal);
 
-	if (tanggal='A') or (tanggal='a') then
+if (tanggal='A') or (tanggal='a') then
 	begin
 	delay(1000);
 	writeln('Apaa cobaa?');
@@ -194,13 +201,25 @@ begin
 	readln;
 	end
 
-	else
+else
+if (tanggal='B') or (tanggal='b') then
 	begin
 	delay(1000);
 	writeln('Dih parah banget, yauda aku ingetin ya itu tuh tanggal jadian kita hahaa');
 	writeln('"enter"');
 	readln;
+	end
+
+else
+	begin
+	delay(1000);
+	writeln('"Input Salah"');
+	delay(1000);
+	writeln('"enter"');
+	readln;
 	end;
+
+	writeln('--------------------------------------------------------------------------------------------------------------------');
 
 	//p2
 	delay(1000);
@@ -210,26 +229,21 @@ begin
 	write('Jawab : ');
 	readln(cantik);
 
-	//pilihan p2
-	if(cantik='A') or (cantik='a') then
+if(cantik='A') or (cantik='a') then
 	begin
 	delay(1000);
 	writeln('Iyaaa dong harus percayaa, kamu tuh cantik, lucu, gemesin. udah janji juga sama aku kan gaboleh bilang jelek :) ');
 	writeln('"enter"');
 	readln;
-
 	end
 
-	else
-	//pilihan p2
-	if (cantik = 'B') or (cantik='b') then
+else
+if (cantik = 'B') or (cantik='b') then
 	begin
 	delay(1000);
 	writeln('Eitss harus percaya dongg, kan kamu udah janji gaboleh ngomong gitu lagi sama akuu, ulang yaa :) ');
 	writeln('"enter"');
 	readln;
-
-	writeln;
 
 	//ulang p2
 	delay(1000);
@@ -238,19 +252,28 @@ begin
 	write('Jawab : ');
 	readln(cantik);
 
-	//pilihan
-	if(cantik='a') or (cantik='A') then
+if(cantik='a') or (cantik='A') then
+	begin
 	delay(1000);
 	writeln('Nah gituu dong... kamu tuh harus percayaa, kamu tuh cantik, lucu, gemesin juga :) ');
 	writeln('"enter"');
 	readln;
+	end
+
+else
+	begin
+	delay(1000);
+	writeln('"Input Salah"');
+	delay(1000);
+	writeln('"enter"');
+	readln;
+	end
 	end;
-	
-	writeln;
+
 
 	//p2
 	delay(1000);
-	writeln('-------------------------------------------------------------------------------------------------------------------');
+	writeln('--------------------------------------------------------------------------------------------------------------------');
 	delay(1500);
 	writeln('Btw Byy aku mau minta maaf');
 	writeln('"enter"');
