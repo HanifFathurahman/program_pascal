@@ -1,3 +1,5 @@
+//FINAL
+
 program cinta;
 uses crt;
 var
