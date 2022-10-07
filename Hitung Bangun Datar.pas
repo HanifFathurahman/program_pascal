@@ -19,7 +19,7 @@ clrscr;
 	delay(100); writeln('|      3. Luas Segitiga         |');
 	delay(100); writeln('|      4. Luas lingkaran        |');
 	delay(100); writeln('|      5. Luas Jajar Genjang    |');
-	delay(100); writeln('|-----=-------------------------|');
+	delay(100); writeln('|-------------------------------|');
 	delay(100); write('Silahkan di pilih : ');
 	delay(100); readln(pilih);
 	writeln;
@@ -91,4 +91,5 @@ if(pilih=5) then
 	delay(100);writeln('Hasilnya adalah : ',hasil5);
 	delay(100);readln(hasil5);
 	end;
+	writeln
 end.
