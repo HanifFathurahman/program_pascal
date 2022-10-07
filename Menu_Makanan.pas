@@ -1,7 +1,7 @@
 program menu_makanan;
 uses crt;
 var
-menu,uang,kembalian:longint;
+menu,pesanan,uang,total,kembalian:longint;
 
 begin
 	clrscr;
@@ -16,6 +16,7 @@ begin
 	writeln('|===================================|');
 	write('Silahkan Pilih Menu : ');
 	readln(menu);
+	writeln;
 
 case (menu) of
 1:menu:=12000;
@@ -26,24 +27,26 @@ case (menu) of
 6:menu:=20000;
 
 else
-	writeln('Menu tidak tersedia');
+	writeln('Menu tidak tersedia');							    //KESALAHAN INPUTAN
 	writeln('Silahkan input sesuai menu yang tersedia');
 	end;
 
-	writeln('===================================');
+	writeln('===================================');			    //JUMLAH PESANAN 
 	writeln('Harga menu yang anda pilih Rp. ',menu);
+	write('Jumlah Pesanan : ');
+	readln(pesanan);
+	
+	total:= menu*pesanan;										//TOTAL HARGA
+	begin
+	delay(100);writeln('Total Harga : Rp. ',total);			    
 	write('Jumlah uang yang anda yang bayar : Rp. ');
 	readln(uang);
 
-	kembalian:=uang-menu;
-if (menu>uang) then
-	begin
-	delay(100);writeln('Uang tidak mencukupi');
-	readln;
-	end
-else
-	begin
+	kembalian:= uang - (menu*pesanan);						    //KEMBALIAN
 	delay(100);writeln('Kembalian : Rp. ',kembalian);
-	readln;
 	end;
+	
+	writeln('===================================');	
+	writeln('Terimakasih');
+	readln;
 end.
