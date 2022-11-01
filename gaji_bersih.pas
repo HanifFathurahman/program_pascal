@@ -17,6 +17,6 @@ clrscr;
 	writeln('--------------------------------');
 	writeln('Nama Karyawan : ',nama);
 	writeln('Gaji Pokok    : ',gapok);
-	writeln('Gaji Bersih yang di terima oleh ',nama, ' adalah ',gajibersih:0:0);
+	writeln('Gaji Bersih yang di terima oleh ',nama, ' adalah sebesar ',gajibersih:0:0);
 	readln;
 end.
