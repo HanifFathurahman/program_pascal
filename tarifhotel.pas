@@ -11,27 +11,27 @@ clrscr;
 	write('Lama Menginap (dalam hari) : '); readln(durasi);
 		if (kamar = 'Standard') or (kamar = 'standard') then
 			begin
-				if (durasi = 1) or (durasi = 2) then
+				if (durasi >= 1) or (durasi <= 2) then
 					begin
 						tarif:= 400000 * durasi;
 					end
-				else if (durasi >= 3) then
+				else if (durasi > 2) then
 					begin
 						tarif:= 350000 * durasi;
 					end;
 			end
 		else if (kamar = 'Eksekutif') or (kamar = 'eksekutif') then
 			begin
-				if (durasi = 1) or (durasi = 2) then
+				if (durasi >= 1) or (durasi <= 2) then
 					begin
 						tarif:= 1200000 * durasi;
 					end
-				else if (durasi >= 3) then
+				else if (durasi > 2) then
 					begin
 						tarif:= 1000000 * durasi;
 					end;
 			end;
-	writeln('-------------------------------------');	
+	writeln('=============================================');	
 	writeln('Jenis Kelas Kamar          : ' ,kamar);
 	writeln('Lama Menginap (dalam hari) : ',durasi, ' hari');
 	writeln('Tarif yang harus dibayarkan adalah Rp. ',tarif);
