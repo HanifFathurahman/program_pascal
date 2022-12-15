@@ -1,0 +1,21 @@
+program pangkat;
+uses crt;
+var
+a,b,counter,hasil : integer;
+
+begin
+	clrscr;
+	writeln('-------------------------');
+	writeln('Program Menghitug Pangkat');
+	writeln('-------------------------');
+	
+	hasil  := 1;
+	write('Masukkan Angka : '); readln(a);
+	write('Masukkan pangkat : '); readln(b);
+	for counter := 1 to b do
+		begin
+			hasil := hasil * a;
+		end;
+	writeln('Hasil : ' ,hasil);
+	readln;
+end.
