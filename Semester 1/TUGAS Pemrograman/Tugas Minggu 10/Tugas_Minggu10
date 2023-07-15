@@ -1,0 +1,17 @@
+program tugas_minggu10;
+uses crt;
+var
+a,b :integer;
+begin
+	clrscr;
+	write('Input angka kelipatan yang diinginkan : '); readln(b);
+	writeln('Bilangan kelipatan ',b, ' antara 0 - 100');
+	a:= b;
+	repeat 
+		begin
+			write(a, ' ');
+			a:= a + b;
+		end;
+	until a > 100;
+	readln;
+end.

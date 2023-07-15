@@ -1,0 +1,45 @@
+program data_array;
+uses crt;
+type
+  array_angka = array[1..5] of integer;
+var
+  data_angka : array_angka;
+  i : integer;
+  sum, max, min : integer;
+  avg : real;
+
+begin
+  clrscr;
+  sum := 0;
+  max := 32768;
+  min := 32767;
+  writeln('--------------------------');
+  writeln('Nama   : Hanif Fathurahman');
+  writeln('Kelas  : R1E              ');
+  writeln('NPM    : 202243501199     ');
+  writeln('--------------------------');
+  for i := 1 to 5 do
+    begin
+      write('input data ke -', i , ' : ');
+      readln(data_angka[i]);
+     end;
+  for i := 1 to 5 do
+    begin 
+      write(data_angka[i], ' ');
+     end;
+  for i := 1 to 5 do
+     begin
+      sum := sum + data_angka[i];
+      avg := sum / 5;
+      if data_angka[i] > max then max := data_angka[i];
+      if data_angka[i] < min then min := data_angka[i];
+     end;
+     
+    writeln;
+    writeln(' ');
+    writeln('Jumlah Data :', sum);
+    writeln('Nilai Tertinggi :', max);
+    writeln('Nilai Terendah :', min);
+    writeln('Rata-Rata : ', avg:0:2);
+    readln;
+end.

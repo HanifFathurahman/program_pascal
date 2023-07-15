@@ -1,0 +1,42 @@
+program tes;
+uses crt;
+var
+benar, salah, nilai: real;
+soal, a, b, jawab, counter : Integer;
+loop  : char;
+
+begin
+  repeat
+  clrscr;
+  writeln('--------------------------');
+  writeln('Nama   : Hanif Fathurahman');
+  writeln('Kelas  : R1E              ');
+  writeln('NPM    : 202243501199     ');
+  writeln('--------------------------');
+  randomize;
+    write('Input jumlah soal : '); readln(soal);
+    writeln();
+    for counter := 1 to soal do
+      begin
+        a := random(100);
+        b := random(100);
+        write('Soal ', counter ,' : ', a ,' + ', b ,' = ');
+        readln(jawab);
+          if (jawab = a + b) then
+            begin
+              benar := benar + 1;
+             end
+          else
+            begin
+              salah := salah + 1;
+            end;
+      end;
+    writeln();
+    writeln('Jumlah benar : ', benar:4:1);
+    writeln('Jumlah salah : ', salah:4:1);
+    nilai := benar / soal * 100;
+    writeln('Nilai        : ', nilai:4:1);
+    writeln();
+    write('Ingin mengulangi(y/n) ?'); readln(loop);
+    until upcase(loop) <> 'Y';
+end.
